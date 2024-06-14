@@ -296,9 +296,17 @@ booksAfterUpdate;
 
 // console.log("jonas");
 
+// async function getTodos() {
+//   const res = await fetch("https://jsonplaceholder.typicode.com/todos");
+//   const data = await res.json();
+//   console.log(data);
+
+//   return data;
+// }
+
 async function getTodos() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/todos");
-  const data = await res.json();
+  const response = await fetch("https://jsonplaceholder.typicode.com/todos");
+  const data = await response.json();
   console.log(data);
 
   return data;
